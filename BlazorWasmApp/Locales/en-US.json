@@ -1,0 +1,14 @@
+{
+  "helloworld": "Hello, World!",
+  "welcome": "Welcome to your new app.",
+  "blazorwasmapp": "BlazorWasmApp",
+  "culture": "Culture",
+  "home": "Home",
+  "clickme": "Click me",
+  "counter": "Counter",
+  "currentcount": "Current Count",
+  "item": "Item",
+  "itempage": "Item Page",
+  "adminpage": "Admin Page",
+  "admin": "Admin"
+}

@@ -1,0 +1,14 @@
+{
+  "helloworld": "Hola, Mundo!",
+  "welcome": "Bienvenido a tu nueva aplicación.",
+  "blazorwasmapp": "Aplicación Blazor Wasm",
+  "culture": "Cultura",
+  "home": "Casa",
+  "clickme": "Haz click en mi",
+  "counter": "Encimera",
+  "currentcount": "Recuento actual",
+  "item": "Artículo",
+  "itempage": "Página del artículo",
+  "adminpage": "Página de administrador",
+  "admin": "Administrador"
+}

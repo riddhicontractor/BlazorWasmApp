@@ -1,0 +1,21 @@
+﻿@page "/counter"
+@inherits MyComponentBase
+@using I18NPortable
+@inject II18N L
+
+<PageTitle>Counter</PageTitle>
+
+<h1>@L["counter"]</h1>
+
+<p role="status">@L["currentcount"]: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">@L["clickme"]</button>
+
+@code{
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

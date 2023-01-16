@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Locales\de-DE.json" />
+    <Content Remove="Locales\en-US.json" />
+    <Content Remove="Locales\es-ES.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Locales\de-DE.json" />
+    <EmbeddedResource Include="Locales\en-US.json" />
+    <EmbeddedResource Include="Locales\es-ES.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="I18NPortable" Version="1.0.1" />
+    <PackageReference Include="I18NPortable.JsonReader" Version="1.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.2" PrivateAssets="all" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+</Project>

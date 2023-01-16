@@ -1,0 +1,34 @@
+﻿@inherits LayoutComponentBase
+@inject I18NPortable.II18N L
+@inject Events Events
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <main>
+        <div class="top-row px-4">
+            @foreach (var language in L.Languages)
+            {
+                var locale = language.Locale.Split('-').LastOrDefault();
+                <button @onclick="@(()=>SetLanguage(language.Locale))" class="btn btn-light btn-lg">
+                    @locale
+                </button>
+            }
+        </div>
+
+        <article class="content px-4">
+            @Body
+        </article>
+    </main>
+</div>
+
+@code {
+    public void SetLanguage(string locale)
+    {
+        L.Language = L.Languages.FirstOrDefault(x => x.Locale == locale);
+        StateHasChanged();
+        Events.InvokeLanguageChanged(locale);
+    }
+}

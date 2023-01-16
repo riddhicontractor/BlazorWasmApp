@@ -1,0 +1,14 @@
+{
+  "helloworld": "Hallo, Welt!",
+  "welcome": "Willkommen in Ihrer neuen App.",
+  "blazorwasmapp": "Blazor Wasm-App",
+  "culture": "Kultur",
+  "home": "Heim",
+  "clickme": "Klick mich",
+  "counter": "Zähler",
+  "currentcount": "Aktueller zählerstand",
+  "item": "Artikel",
+  "itempage": "Artikelseites",
+  "adminpage": "Administrator Seite",
+  "admin": "Administrator"
+}
