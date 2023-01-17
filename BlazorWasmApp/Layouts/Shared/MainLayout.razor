@@ -13,11 +13,10 @@
             {
                 var locale = language.Locale.Split('-').LastOrDefault();
                 <button @onclick="@(()=>SetLanguage(language.Locale))" class="btn btn-light btn-lg">
-                    @locale
+                    <img src="icons/@locale/flag.png" width="25" height="25" />
                 </button>
             }
         </div>
-
         <article class="content px-4">
             @Body
         </article>
