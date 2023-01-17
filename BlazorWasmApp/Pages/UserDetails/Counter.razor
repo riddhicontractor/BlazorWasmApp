@@ -10,12 +10,3 @@
 <p role="status">@L["currentcount"]: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">@L["clickme"]</button>
-
-@code{
-    private int currentCount = 0;
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
-}
