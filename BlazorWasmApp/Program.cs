@@ -1,6 +1,5 @@
 using BlazorWasmApp;
 using I18NPortable;
-using I18NPortable.JsonReader;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
